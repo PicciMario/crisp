@@ -1,3 +1,14 @@
+# Crisp By PicciMario
+Versione modificata per uso nel mio blog personale.
+
+- Eliminato uso del font-size 1.1em su schermi grandi.
+- Rimossa sezione commenti nei post.
+- Aggiornato messaggio nel footer.
+- Sistemati i link ai social.
+- Sfoltiti i link di share in coda ai post.
+- Aggiornato package.json.
+
+---
 # Crisp
 
 A minimalist, responsive, and open-source two-column theme for the [Ghost](http://ghost.org) publishing platform by [Kathy Qian](http://kathyqian.com). Last tested with Ghost v2.1.1. For the last version tested with pre-2.0 Ghost releases, see the [ghost-sub-2](https://github.com/kathyqian/crisp/tree/ghost-sub-2) branch.
