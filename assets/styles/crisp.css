@@ -179,9 +179,13 @@ h1.post-title {
 	margin-top:0.35em;
 	margin-bottom: 0.6em;
 }
-h3.post-title {
+div.post-title-excerpt {
+	font-size: 0.8em;
+	color: gray;
+}
+div.post-title{
 	margin-top:0.4em;
-	padding-bottom:0.9em;
+	padding-bottom:0.4em;
 	border-bottom: 1px solid #eee;
 	font-size: 1.2em;
 	color: #444;
@@ -220,7 +224,8 @@ h3.post-title {
 }
 /* Footer */
 .pagination {
-	margin-bottom:1em;
+	margin-bottom: 1em;
+	margin-top: .5em;
 }
 footer a {
 	font-weight:300;
