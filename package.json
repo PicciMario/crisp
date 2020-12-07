@@ -39,6 +39,6 @@
         "url": "https://github.com/piccimario/crisp.git"
     },
     "config": {
-        "posts_per_page": 10
+        "posts_per_page": 30
     }
 }
