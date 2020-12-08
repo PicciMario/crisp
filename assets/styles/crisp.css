@@ -2,7 +2,9 @@
 	padding: 0;
 	margin: 0;
 } 
-/* Basic Typography */
+
+/* ----- Basic Typography ---------------------------------------------------------------------- */
+
 html, body {
 	font-size: 1em;
 	line-height: 1.65em;
@@ -16,8 +18,10 @@ html {
 }
 body {
 	padding: 2em 2.5em 1em 20em;
-}                  
-/* Blocks */
+}    
+
+/* ----- Blocks -------------------------------------------------------------------------------- */
+
 header {
 	border-right: 1px #eee solid;
 	padding: 2em;
@@ -48,7 +52,9 @@ p, hr, h4, h5, h6 {
 	margin-top: 0.9em;
 	margin-bottom: 0.9em;
 }
-/* Headings */
+
+/* ----- Headings ------------------------------------------------------------------------------ */
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bree Serif", serif;
 	font-weight: 400 !important;
@@ -80,7 +86,9 @@ h5 {
 h6 {
 	font-size:1.1em;
 }
-/* Page Elements */
+
+/* ----- Page Elements ------------------------------------------------------------------------- */
+
 img, iframe {
 	max-width: 100%;
 }
@@ -131,7 +139,9 @@ input {
 	font-size:1em;
 	padding: 0.3em;
 }
-/* Sidebar */
+
+/* ----- Sidebar ------------------------------------------------------------------------------- */
+
 header h1 {
 	font-size:1.9em;
 	margin-top:0.8em;
@@ -171,6 +181,9 @@ header #logo img {
 header h6 {
 	margin-top:0.5em;
 }
+
+/* ----- Search components --------------------------------------------------------------------- */
+
 header #search-bar{
 	margin-bottom: 1em;
 	display: flex;
@@ -180,13 +193,28 @@ header #search-bar #search-input{
 	flex-grow: 1;
 }
 header #search-bar #search-clear{
-	margin-left: -1.5em;
+    position: relative;
+    right: 1.2em;
+    top: .1em;
+    font-size: 1.2em;
 	color: #ccc;
 }
 header #search-bar #search-clear:hover{
 	color: #888;
 }
-/* Posts */
+
+/* DIV created by ghost-finder */
+.search-results-wrapper{
+	list-style-type: none;
+    border: 1px solid #5cc265;
+    padding: .5em;
+    background: #d9ffdc;
+	margin-bottom: 1em;	
+	margin-left: 0;
+}
+
+/* ----- Posts --------------------------------------------------------------------------------- */
+
 article span.post-stamp {
 	color:#888;     
 }
@@ -237,7 +265,9 @@ div.post-title{
 	padding-bottom: 0.2em;
 	border-bottom: 1px solid #eee;
 }
-/* Footer */
+
+/* ----- Footer -------------------------------------------------------------------------------- */
+
 .pagination {
 	margin-bottom: 1em;
 	margin-top: .5em;
@@ -251,7 +281,9 @@ footer a:hover {
 	color:#444;
 	text-decoration: none;
 }
-/* Large Screens */
+
+/* ----- Large Screens ------------------------------------------------------------------------- */
+
 /*
 @media only screen and (min-width: 1281px) {
 	html, body {
@@ -259,7 +291,9 @@ footer a:hover {
 	} 
 }
 */
-/* Small Screens */
+
+/* ----- Small Screens ------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 800px) { 
 	body {
 		padding:0;
@@ -282,7 +316,9 @@ footer a:hover {
 		padding: 0 2.5em 2em 2.5em;
 	}
 }
-/* Tiny Screens */
+
+/* ----- Tiny Screens -------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 320px) { 
 	header {
 		padding: 1.2em 1.2em 0.6em 1.2em;
