@@ -25,6 +25,10 @@
 	</head>
 	<body class="{{body_class}}">
 		<header id="header" {{#if @blog.cover_image}}style="background-image: url('{{@blog.cover_image}}')"{{/if}}>
+			<div id="search-bar">
+				<input id="search-input" type="text" placeholder="Cerca nel blog.." />
+				<span id="search-clear"><i class="fa fa-times-circle"></i></span>
+			</div>
 			{{#if @blog.logo}}<a id="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
 			<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 			<p>{{@blog.description}}</p>
@@ -32,13 +36,17 @@
 			{{navigation}}
 		</header>
 		<main id="content">
+			<div id="search-div">
+				<div id="search-result"></div>
+			</div>			
 			{{{body}}}
 		</main>
 		<footer id="footer">
 			<section id="footer-message">&copy; {{date format='YYYY'}} {{@blog.title}}. All rights reserved. Powered by <a href="http://ghost.org" target="_blank">Ghost</a>. <a href="https://github.com/kathyqian/crisp" target="_blank">Crisp</a> theme by <a href="http://kathyqian.com" target="_blank">Kathy Qian</a>, customized by <a href="http://www.mariopiccinelli.it">Mario Piccinelli</a>.</section>
 		</footer>
-	{{ghost_foot}}
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+	<script src="{{asset "/js/ghost-finder.js"}}"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+	{{ghost_foot}}
 	</body>
 </html>

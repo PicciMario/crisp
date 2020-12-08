@@ -171,6 +171,21 @@ header #logo img {
 header h6 {
 	margin-top:0.5em;
 }
+header #search-bar{
+	margin-bottom: 1em;
+	display: flex;
+}
+header #search-bar #search-input{
+	border: 1px solid #eee;
+	flex-grow: 1;
+}
+header #search-bar #search-clear{
+	margin-left: -1.5em;
+	color: #ccc;
+}
+header #search-bar #search-clear:hover{
+	color: #888;
+}
 /* Posts */
 article span.post-stamp {
 	color:#888;     
