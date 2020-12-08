@@ -1,12 +1,15 @@
 # Crisp By PicciMario
 Versione modificata per uso nel mio blog personale.
 
-- Eliminato uso del font-size 1.1em su schermi grandi.
+- Qualche ritocco estetico nei css.
 - Rimossa sezione commenti nei post.
 - Aggiornato messaggio nel footer.
 - Sistemati i link ai social.
 - Sfoltiti i link di share in coda ai post.
 - Aggiornato package.json.
+- Aggiunto excerpt nella lista dei post nella home.
+- Incrementato numero post nella home a 30.
+- Aggiunta funzionalità di ricerca con una versione custom di [ghost-finder](https://github.com/electronthemes/ghost-finder).
 
 ---
 # Crisp
