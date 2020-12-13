@@ -184,6 +184,26 @@ header h6 {
 
 /* ----- Search components --------------------------------------------------------------------- */
 
+/*
+
+These styles have been optimized for inclusion of the ghost-finder library, 
+by putting something like this in the site footer:
+
+<script>
+new GhostFinder({
+    homeUrl: 'https://mariopiccinelli.it/blog',
+    input: '#search-input',
+    clearButton: '#search-clear',
+    scrollOnSearch: true,
+    showResult: '#search-result',
+    contentApiKey: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+    resultTemplate: '<p class="search-results-title">Search results:</p><ul class="search-results-wrapper">##results</ul>' // remove search results number
+})
+</script>
+
+*/
+
+
 header #search-bar{
 	margin-bottom: 1em;
 	display: flex;
@@ -211,6 +231,13 @@ header #search-bar #search-clear:hover{
     background: #d9ffdc;
 	margin-bottom: 1em;	
 	margin-left: 0;
+}
+
+/* Serch result title */
+.search-results-title{
+	color: #5cc265;
+	font-weight: bold;
+	margin-bottom: 0;
 }
 
 /* ----- Posts --------------------------------------------------------------------------------- */
